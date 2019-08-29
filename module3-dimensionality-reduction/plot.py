@@ -22,11 +22,8 @@ def Setup(plot, data=[], layout={}):
     return plot
 
 
-def Plot(plot, fig=None):
-    if fig==None:
-        fig = Figure(data=plot['data'], layout=plot['layout'])
-
-    return fig
+def Plot(plot):
+    return Figure(data=plot['data'], layout=plot['layout'])
 
 
 plots = {
